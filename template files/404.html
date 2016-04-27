@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="bouwbedrijf aannemer fennis hilversum gooi verbouwen timmerwerkzaamheden aannemersbedrijf verbouwing" />
-    <meta name="description" content="website bouw en aannemersbedrijf fennis">
-    <meta name="author" content="wouter fennis">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>Bouw en Aannemersbedrijf Fennis</title>
+    <title>Modern Business - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -34,34 +32,83 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Navigatie</span>
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand fennis-logo" href="index.html">
-                    <img class="pull-left" alt="Brand" src="img/website/logo.PNG"> Bouw- en Aannemersbedrijf Fennis
-                </a>
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="projecten.html">Projecten</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="zonnepanelen.html">Zonnepanelen</a>
-                    </li>
-                    <li>
-                        <a href="historie.html">Historie</a>
+                        <a href="services.html">Services</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li class="active">
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -77,7 +124,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">404
-                    <small>Pagina kon niet worden gevonden</small>
+                    <small>Page Not Found</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a>
@@ -94,7 +141,7 @@
                 <div class="jumbotron">
                     <h1><span class="error-404">404</span>
                     </h1>
-                    <p>De pagina die je zoekt bestaat niet. Probeer met de onderstaande links weer op het juiste pad te komen</p>
+                    <p>The page you're looking for could not be found. Here are some helpful links to get you back on track:</p>
                     <ul>
                         <li>
                             <a href="index.html">Home</a>
@@ -171,7 +218,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="text-center">Copyright &copy; 2016 | Bouw- en Aannemersbedrijf Fennis | Ontwikkeld door: <a href="https://www.facebook.com/wouter.fennis.5">Wouter Fennis</a></p>
+                    <p>Copyright &copy; Your Website 2014</p>
                 </div>
             </div>
         </footer>
@@ -184,13 +231,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-        $('.carousel').carousel({
-            interval: 5000 //changes the speed
-        })
-    </script>
 
 </body>
 
