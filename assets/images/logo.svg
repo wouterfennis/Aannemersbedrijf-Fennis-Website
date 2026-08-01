@@ -1,6 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle">
-  <title id="logoTitle">Bouw- en Aannemersbedrijf Fennis B.V.</title>
-  <rect width="64" height="64" rx="14" fill="#1b2a41"/>
-  <path d="M32 12 L52 28 H46 V48 H18 V28 H12 Z" fill="#ffffff"/>
-  <rect x="27" y="34" width="10" height="14" fill="#e2622a"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="36.317165mm"
+   height="33.670532mm"
+   viewBox="0 0 36.317165 33.670532"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="5.5090348"
+     inkscape:cx="102.19576"
+     inkscape:cy="84.679081"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" /><defs
+     id="defs1" /><g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:inline"
+     transform="translate(-86.823006,-131.27981)"><path
+       style="display:inline;fill:#cf1010;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+       d="m 92.915477,136.86015 -6.044941,9.30513 25.877774,-3.19227 5.63742,-8.01464 4.14316,4.95821 h 0.61128 v -1.42633 l -4.48276,-5.36574 z"
+       id="path1" /></g><g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3"
+     style="display:inline"
+     transform="translate(-86.823006,-131.27981)"><path
+       style="display:inline;fill:#f9f9f9;stroke:#9ca0a7;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+       d="m 105.95624,131.96986 -0.0679,6.52039 2.9885,-0.27169 v -6.72414 z"
+       id="path2"
+       inkscape:label="path2" /></g><g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer 4"
+     style="display:inline"
+     transform="translate(-86.823006,-131.27981)"><path
+       style="display:inline;fill:none;stroke:#b7babf;stroke-width:0.465;stroke-dasharray:none;stroke-opacity:1"
+       d="m 91.149539,147.65954 v 7.19959 l 15.146311,4.41484 0.0679,-13.71997 z"
+       id="path3" /></g><g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Layer 5"
+     transform="translate(-86.823006,-131.27981)"><path
+       style="fill:#b7babf;fill-opacity:1;stroke:#b7babf;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+       d="m 87.074298,146.16528 -0.06792,10.59563 26.692822,8.01464 -26.692822,-8.01464 z"
+       id="path4" /></g></svg>
