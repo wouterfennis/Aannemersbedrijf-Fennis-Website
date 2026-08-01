@@ -40,8 +40,8 @@ Er bestaat een Google Bedrijfsprofiel voor "aannemersbedrijf fennis". De klant h
 
 Deze acties vereisen input, materiaal of besluiten van de klant/eigenaar en kunnen niet door een agent worden afgerond.
 
-- [ ] **Projectfoto's aanleveren** — Minimaal 6-10 foto's van afgeronde/lopende projecten (voor/na waar mogelijk), inclusief de onderkeldering aan de Kapteijnstraat, voor gebruik op [projecten.html](projecten.html) en de homepage.
-- [ ] **Portretfoto van Rolf Fennis aanleveren** — Voor gebruik op [over-ons.html](over-ons.html), [contact.html](contact.html) en eventueel de homepage.
+- [x] **Projectfoto's aanleveren** — Minimaal 6-10 foto's van afgeronde/lopende projecten (voor/na waar mogelijk), inclusief de onderkeldering aan de Kapteijnstraat, voor gebruik op [projecten.html](projecten.html) en de homepage. ✅ Verwerkt: kelder-galerij (5 foto's) en verbouwing/dakopbouw-galerij (4 foto's) toegevoegd aan [projecten.html](projecten.html).
+- [x] **Portretfoto van Rolf Fennis aanleveren** — Voor gebruik op [over-ons.html](over-ons.html), [contact.html](contact.html) en eventueel de homepage. ✅ Verwerkt: portretfoto toegevoegd aan de directeurskaart op [over-ons.html](over-ons.html) en naast de contactgegevens op [contact.html](contact.html).
 - [ ] **Klantreviews/testimonials verzamelen** — Minimaal 2-3 citaten van tevreden opdrachtgevers (met naam/plaats indien akkoord), eventueel aangevuld met een link naar Google Reviews.
 - [ ] **Openingstijden en bereikbaarheid doorgeven** — Exacte dagen/tijden waarop gebeld of langsgekomen kan worden.
 - [ ] **Garantie- en verzekeringsinformatie aanleveren** — Details over aansprakelijkheidsverzekering, garantietermijnen en of met eigen personeel of onderaannemers wordt gewerkt, t.b.v. de aangevulde FAQ.
