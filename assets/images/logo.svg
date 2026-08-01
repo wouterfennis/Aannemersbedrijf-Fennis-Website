@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Bouw- en Aannemersbedrijf Fennis B.V.</title>
+  <rect width="64" height="64" rx="14" fill="#1b2a41"/>
+  <path d="M32 12 L52 28 H46 V48 H18 V28 H12 Z" fill="#ffffff"/>
+  <rect x="27" y="34" width="10" height="14" fill="#e2622a"/>
+</svg>

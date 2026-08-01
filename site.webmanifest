@@ -1,0 +1,17 @@
+{
+  "name": "Bouw- en Aannemersbedrijf Fennis B.V.",
+  "short_name": "Fennis",
+  "description": "Bouw- en aannemersbedrijf in Hilversum voor nieuwbouw, verbouwing, renovatie en maatwerk timmerwerk sinds 1963.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1b2a41",
+  "lang": "nl",
+  "icons": [
+    {
+      "src": "assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
