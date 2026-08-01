@@ -48,7 +48,7 @@ You are a meticulous code reviewer specialized in **static, no-build-tool HTML/C
 - Content is written in clear, factual, self-contained prose that answers likely questions directly (LLM crawlers favor extractable facts over marketing fluff).
 - Key facts (services offered, service area, contact info, credentials) are stated in plain text somewhere in the HTML body, not only inside images or JSON-LD.
 - `robots.txt` doesn't block resources needed for rendering/understanding content, and references the sitemap.
-- `sitemap.xml` includes every public page with correct `<loc>` matching canonical URLs, and excludes any intentionally-excluded pages (e.g., zonnepanelen per client request).
+- `sitemap.xml` includes every public page with correct `<loc>` matching canonical URLs, and excludes any intentionally-excluded pages.
 
 ### 6. Consistency & maintenance hygiene
 - Business facts (address, phone, email, founding year, owner, legal name) match across footer, JSON-LD, `site.webmanifest`, `llms.txt`, and README — flag any drift.

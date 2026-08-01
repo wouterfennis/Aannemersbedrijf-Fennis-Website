@@ -419,6 +419,8 @@ section { padding: 4.5rem 0; }
 .contact-list-item { display: flex; gap: 1rem; align-items: flex-start; }
 .contact-list-item .card-icon { margin-bottom: 0; flex-shrink: 0; }
 .contact-list-item h3 { font-size: 1rem; margin-bottom: 0.2rem; }
+.contact-list-item p { margin-bottom: 0; }
+.contact-list-item .portrait-block { margin-top: 0.5rem; }
 .map-frame {
   border-radius: var(--radius);
   overflow: hidden;
@@ -430,6 +432,7 @@ section { padding: 4.5rem 0; }
 /* ---- Footer ---- */
 .site-footer { background: var(--color-primary); color: rgba(255,255,255,0.85); padding: 3.5rem 0 1.5rem; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 0.9fr 0.9fr 1.1fr; gap: 2.5rem; }
+.footer-grid > div:first-child > p { max-width: 32ch; }
 @media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
 .footer-brand { display: flex; align-items: center; gap: 0.6rem; font-weight: 800; color: var(--color-white); margin-bottom: 0.85rem; }
@@ -452,6 +455,11 @@ section { padding: 4.5rem 0; }
 /* ---- Utility ---- */
 .mt-0 { margin-top: 0; }
 .text-center { text-align: center; }
+
+/* ---- 404 error page ---- */
+.error-section { padding: 6rem 0; text-align: center; }
+.error-section > .container > p { max-width: 50ch; margin-inline: auto; }
+.error-section .hero-actions { justify-content: center; }
 .visually-hidden {
   position: absolute;
   width: 1px; height: 1px;
