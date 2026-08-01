@@ -4,24 +4,24 @@
    ========================================================================== */
 
 :root {
-  /* Color palette — inspired by construction: steel blue + safety orange */
-  --color-primary: #1b2a41;
-  --color-primary-light: #24384f;
-  --color-accent: #e2622a;
-  --color-accent-dark: #c44e1c;
+  /* Color palette — matched to logo: deep charcoal + logo red + construction grays */
+  --color-primary: #2a2220;
+  --color-primary-light: #3d3330;
+  --color-accent: #cf1010;
+  --color-accent-dark: #a80d0d;
   --color-bg: #ffffff;
-  --color-bg-alt: #f5f6f8;
-  --color-border: #e2e5ea;
-  --color-text: #232a35;
-  --color-text-muted: #5b6472;
+  --color-bg-alt: #f5f5f5;
+  --color-border: #e2e2e2;
+  --color-text: #252120;
+  --color-text-muted: #6b6560;
   --color-white: #ffffff;
-  --color-accent-light: #ff9c6b;
+  --color-accent-light: #e85050;
 
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   --radius: 10px;
-  --shadow-sm: 0 1px 3px rgba(20, 27, 40, 0.08);
-  --shadow-md: 0 8px 24px rgba(20, 27, 40, 0.12);
+  --shadow-sm: 0 1px 3px rgba(40, 20, 20, 0.08);
+  --shadow-md: 0 8px 24px rgba(40, 20, 20, 0.12);
 
   --container-width: 1160px;
 }
@@ -167,7 +167,7 @@ section { padding: 4.5rem 0; }
 
 /* ---- Hero ---- */
 .hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #14202f 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #1a1412 100%);
   color: var(--color-white);
   padding: 5rem 0;
   position: relative;
@@ -177,7 +177,7 @@ section { padding: 4.5rem 0; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 80% 20%, rgba(226, 98, 42, 0.25), transparent 45%);
+  background-image: radial-gradient(circle at 80% 20%, rgba(207, 16, 16, 0.22), transparent 45%);
   pointer-events: none;
 }
 .hero-inner { position: relative; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; }
@@ -206,7 +206,7 @@ section { padding: 4.5rem 0; }
 
 /* ---- Page header (sub pages) ---- */
 .page-header {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #14202f 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #1a1412 100%);
   color: var(--color-white);
   padding: 3.25rem 0;
 }
@@ -241,7 +241,7 @@ section { padding: 4.5rem 0; }
   height: 52px;
   display: grid;
   place-items: center;
-  background: rgba(226, 98, 42, 0.1);
+  background: rgba(207, 16, 16, 0.1);
   color: var(--color-accent);
   border-radius: 12px;
   margin-bottom: 1.1rem;
