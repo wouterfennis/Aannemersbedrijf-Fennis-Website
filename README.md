@@ -1,6 +1,6 @@
-# Website Bouw- en Aannemersbedrijf Fennis B.V. — Onderhoudshandleiding
+# Website Fennis Bouw- en Aannemersbedrijf B.V. — Onderhoudshandleiding
 
-Deze repository bevat de statische website van Bouw- en Aannemersbedrijf Fennis B.V. (Hilversum). Dit document is bedoeld voor toekomstig onderhoud: welke technologie is gebruikt, hoe de site is opgebouwd en hoe je wijzigingen veilig doorvoert.
+Deze repository bevat de statische website van Fennis Bouw- en Aannemersbedrijf B.V. (Hilversum). Dit document is bedoeld voor toekomstig onderhoud: welke technologie is gebruikt, hoe de site is opgebouwd en hoe je wijzigingen veilig doorvoert.
 
 ## 1. Technologieën
 
@@ -33,7 +33,7 @@ Deze repository bevat de statische website van Bouw- en Aannemersbedrijf Fennis 
 
 ## 3. Bedrijfsgegevens die op de site staan
 
-- Naam: Bouw- en Aannemersbedrijf Fennis B.V. (rechtsvorm: besloten vennootschap)
+- Naam: Fennis Bouw- en Aannemersbedrijf B.V. (rechtsvorm: besloten vennootschap)
 - Adres: Rozenstraat 82, 1214 BW Hilversum
 - Telefoon: 06-53671191
 - E-mail: fennisaannemersbedrijf@gmail.com
@@ -43,7 +43,7 @@ Deze repository bevat de statische website van Bouw- en Aannemersbedrijf Fennis 
 - Werkgebied: Hilversum en omgeving (Gooi)
 - Google Bedrijfsprofiel: `https://share.google/nWJnzld6kABxqizoN` (5,0 sterren, 4 reviews op moment van schrijven). Link staat in de footer van elke pagina, op [contact.html](contact.html) en bij de testimonials-sectie op [index.html](index.html); rating is verwerkt als `aggregateRating` in de JSON-LD op [index.html](index.html) en [contact.html](contact.html). **Bij een nieuwe/gewijzigde rating**: werk de `aggregateRating`-waarden en de zichtbare sterren-badge op de homepage bij.
 
-De volledige bedrijfsnaam "Bouw- en Aannemersbedrijf Fennis B.V." komt bewust op meerdere plekken voor: de footer op elke pagina, de JSON-LD blokken (`name`/`legalName`) in de `<head>`, `site.webmanifest` en [llms.txt](llms.txt). Paginatitels en `og:title` gebruiken de kortere merknaam "Aannemersbedrijf Fennis" i.v.m. SEO-titellengte. **Bij wijziging van adres, telefoon of e-mail: pas alle plekken aan** (zichtbare tekst, JSON-LD op elke pagina, llms.txt).
+De volledige bedrijfsnaam "Fennis Bouw- en Aannemersbedrijf B.V." komt bewust op meerdere plekken voor: de footer op elke pagina, de JSON-LD blokken (`name`/`legalName`) in de `<head>`, `site.webmanifest` en [llms.txt](llms.txt). Paginatitels en `og:title` gebruiken de kortere merknaam "Fennis Aannemersbedrijf" i.v.m. SEO-titellengte. **Bij wijziging van adres, telefoon of e-mail: pas alle plekken aan** (zichtbare tekst, JSON-LD op elke pagina, llms.txt).
 
 ✅ Het domein is vastgesteld op `https://www.aannemersbedrijf-fennis.nl/` en verwerkt in canonical links, OG-tags, JSON-LD `url`/`image`, sitemap.xml en robots.txt.
 
