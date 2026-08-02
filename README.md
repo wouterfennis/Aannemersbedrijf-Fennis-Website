@@ -36,7 +36,7 @@ Deze repository bevat de statische website van Bouw- en Aannemersbedrijf Fennis 
 - Naam: Bouw- en Aannemersbedrijf Fennis B.V. (rechtsvorm: besloten vennootschap)
 - Adres: Rozenstraat 82, 1214 BW Hilversum
 - Telefoon: 06-53671191
-- E-mail: aannemers@aannemersbedrijf-fennis.eu
+- E-mail: fennisaannemersbedrijf@gmail.com
 - Openingstijden: ma&ndash;vr 07:30&ndash;17:00 (zie footer op elke pagina en [contact.html](contact.html))
 - Opgericht: 28-01-1963 door F.M. Fennis (destijds eenmanszaak); vanaf 1995 VOF; eigenaar/directeur sinds 2005: Rolf Fennis; in 2026 omgezet naar besloten vennootschap (B.V.) — zie de tijdlijn op [over-ons.html](over-ons.html)
 - Lidmaatschap: Bouwend Nederland
@@ -45,7 +45,7 @@ Deze repository bevat de statische website van Bouw- en Aannemersbedrijf Fennis 
 
 De volledige bedrijfsnaam "Bouw- en Aannemersbedrijf Fennis B.V." komt bewust op meerdere plekken voor: de footer op elke pagina, de JSON-LD blokken (`name`/`legalName`) in de `<head>`, `site.webmanifest` en [llms.txt](llms.txt). Paginatitels en `og:title` gebruiken de kortere merknaam "Aannemersbedrijf Fennis" i.v.m. SEO-titellengte. **Bij wijziging van adres, telefoon of e-mail: pas alle plekken aan** (zichtbare tekst, JSON-LD op elke pagina, llms.txt).
 
-✅ Het domein is vastgesteld op `https://www.aannemersbedrijf-fennis.eu/` en verwerkt in canonical links, OG-tags, JSON-LD `url`/`image`, sitemap.xml en robots.txt.
+✅ Het domein is vastgesteld op `https://www.aannemersbedrijf-fennis.nl/` en verwerkt in canonical links, OG-tags, JSON-LD `url`/`image`, sitemap.xml en robots.txt.
 
 ℹ️ De testimonials-sectie op [index.html](index.html) bevat momenteel placeholder-citaten (duidelijk als zodanig gemarkeerd) totdat er echte klantreviews worden aangeleverd — zie [MARKETING-PLAN.md](MARKETING-PLAN.md).
 
@@ -92,5 +92,5 @@ Dit is een volledig statische site: alle bestanden kunnen direct naar elke stati
 
 ## 7. Wat je NIET moet doen
 
-- Geen foto's van de oude/originele website (aannemersbedrijf-fennis.eu) hergebruiken zonder toestemming (copyright/hotlinking-risico).
+- Geen foto's van de oude/originele website (aannemersbedrijf-fennis.nl) hergebruiken zonder toestemming (copyright/hotlinking-risico).
 - Geen build-tools, frameworks of CDN-afhankelijkheden introduceren zonder overleg — de site is bewust lichtgewicht en dependency-vrij gehouden.

@@ -19,7 +19,7 @@ Je bent een ervaren marketingconsultant en conversie-specialist, gespecialiseerd
 ## Context van het bedrijf
 - Familiebedrijf, opgericht in 1963 door F.M. Fennis, sinds 2005 geleid door eigenaar **Rolf Fennis**.
 - Lid van Bouwend Nederland — een sterk vertrouwenssignaal dat volop uitgebuit mag worden.
-- Contactgegevens: Rozenstraat 82, 1214 BW Hilversum; tel 06-53671191; e-mail aannemers@aannemersbedrijf-fennis.eu.
+- Contactgegevens: Rozenstraat 82, 1214 BW Hilversum; tel 06-53671191; e-mail fennisaannemersbedrijf@gmail.com.
 - Doel van iedere pagina: de bezoeker moet zonder frictie naar **bellen, mailen of het offerteformulier invullen** worden geleid — dat is de enige conversie die telt voor dit bedrijf (geen webshop, geen losse productverkoop).
 
 ## Reviewchecklist
