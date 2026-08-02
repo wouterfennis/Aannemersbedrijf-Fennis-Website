@@ -1,5 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#1b2a41"/>
-  <path d="M32 12 L52 28 H46 V48 H18 V28 H12 Z" fill="#ffffff"/>
-  <rect x="27" y="34" width="10" height="14" fill="#e2622a"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="36.317165mm"
+   height="33.670532mm"
+   viewBox="0 0 36.317165 33.670532"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"><g
+     transform="translate(-86.823006,-131.27981)"><path
+       style="fill:#cf1010;fill-opacity:1;stroke:none"
+       d="m 92.915477,136.86015 -6.044941,9.30513 25.877774,-3.19227 5.63742,-8.01464 4.14316,4.95821 h 0.61128 v -1.42633 l -4.48276,-5.36574 z" /><path
+       style="fill:#f9f9f9;stroke:#9ca0a7;stroke-width:0.365"
+       d="m 105.95624,131.96986 -0.0679,6.52039 2.9885,-0.27169 v -6.72414 z" /><path
+       style="fill:none;stroke:#b7babf;stroke-width:0.465"
+       d="m 91.149539,147.65954 v 7.19959 l 15.146311,4.41484 0.0679,-13.71997 z" /><path
+       style="fill:#b7babf;fill-opacity:1;stroke:#b7babf;stroke-width:0.365"
+       d="m 87.074298,146.16528 -0.06792,10.59563 26.692822,8.01464 -26.692822,-8.01464 z" /></g></svg>
