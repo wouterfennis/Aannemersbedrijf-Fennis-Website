@@ -48,7 +48,6 @@
         "reviewCount": "4"
       },
       "sameAs": [
-        "https://www.bouwendnederland.nl/",
         "https://share.google/nWJnzld6kABxqizoN"
       ]
     }
@@ -118,7 +117,12 @@
   <main id="main">
     <section class="page-header">
       <div class="container">
-        <p class="breadcrumbs"><a href="index.html">Home</a> / Contact</p>
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumbs">
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Contact</li>
+          </ol>
+        </nav>
         <h1>Contact</h1>
         <p class="page-header-lead">Voor al uw vragen of voor het maken van een afspraak kunt u altijd vrijblijvend contact met ons opnemen.</p>
       </div>
@@ -146,7 +150,6 @@
                 <p class="text-muted">Rozenstraat 82<br>1214 BW Hilversum</p>
               </div>
             </div>
-            <!-- TODO: openingstijden controleren/bevestigen met de klant -->
             <div class="contact-list-item">
               <div class="card-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
@@ -211,7 +214,8 @@
               title="Kaart locatie Fennis Bouw- en Aannemersbedrijf, Rozenstraat 82, Hilversum"
               src="https://www.google.com/maps?q=Rozenstraat+82,+1214+BW+Hilversum&output=embed"
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+              referrerpolicy="no-referrer-when-downgrade"
+              sandbox="allow-scripts allow-same-origin allow-forms allow-popups">
             </iframe>
           </div>
         </div>

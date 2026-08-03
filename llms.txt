@@ -20,7 +20,7 @@ Fennis Bouw- en Aannemersbedrijf B.V. is een familiebedrijf gevestigd aan de Roz
 
 ## Pagina's
 
-- [Home](/index.html): Introductie, diensten in het kort, werkwijze en veelgestelde vragen.
+- [Home](/): Introductie, diensten in het kort, werkwijze en veelgestelde vragen.
 - [Diensten](/diensten.html): Volledig overzicht van alle bouw- en verbouwdiensten.
 - [Projecten](/projecten.html): Projectcategorieën en voorbeelden van uitgevoerd werk.
 - [Over ons](/over-ons.html): Geschiedenis van het bedrijf sinds 1963.

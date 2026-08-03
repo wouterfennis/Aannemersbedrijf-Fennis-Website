@@ -16,14 +16,14 @@ Deze repository bevat de statische website van Fennis Bouw- en Aannemersbedrijf 
   - [robots.txt](robots.txt) en [sitemap.xml](sitemap.xml) voor zoekmachines.
   - [llms.txt](llms.txt) volgens de llmstxt.org-conventie, een korte samenvatting voor AI-assistenten/LLM's.
   - Op elke pagina: JSON-LD structured data (`GeneralContractor`/`LocalBusiness`), Open Graph-meta, canonical URL. Op [index.html](index.html) en [contact.html](contact.html) bevat de structured data ook een `aggregateRating` (Google-beoordeling, zie punt 3). Bewust géén Twitter Card-tags of Facebook/LinkedIn-specifieke markup.
-  - Naast de WhatsApp-link (`wa.me`) staat er nu ook een link naar het Google Bedrijfsprofiel (reviews) in de footer van elke pagina, op [contact.html](contact.html) en bij de testimonials-sectie op [index.html](index.html).
+  - Naast de WhatsApp-link (`wa.me`) staat er nu ook een link naar het Google Bedrijfsprofiel (reviews) in de footer van elke pagina en op [contact.html](contact.html);
 - **Overig**: [site.webmanifest](site.webmanifest) (PWA-manifest voor iconen/themakleur), [404.html](404.html) als foutpagina (met dezelfde header/footer als de overige pagina's).
 
 ## 2. Paginastructuur
 
 | Pagina | Inhoud |
 |---|---|
-| [index.html](index.html) | Homepage: introductie, diensten in het kort, werkwijze, testimonials, FAQ |
+| [index.html](index.html) | Homepage: introductie, diensten in het kort, werkwijze, FAQ |
 | [diensten.html](diensten.html) | Volledig overzicht van alle bouw- en verbouwdiensten, met per dienst een CTA-link naar [contact.html](contact.html) |
 | [projecten.html](projecten.html) | Projectcategorieën / voorbeelden van uitgevoerd werk |
 | [over-ons.html](over-ons.html) | Bedrijfsgeschiedenis (sinds 1963, inclusief de omzetting naar B.V. in 2026) |
@@ -42,13 +42,13 @@ Deze repository bevat de statische website van Fennis Bouw- en Aannemersbedrijf 
 - Opgericht: 28-01-1963 door F.M. Fennis (destijds eenmanszaak); vanaf 1995 VOF; eigenaar/directeur sinds 2005: Rolf Fennis; in 2026 omgezet naar besloten vennootschap (B.V.) — zie de tijdlijn op [over-ons.html](over-ons.html)
 - Lidmaatschap: Bouwend Nederland
 - Werkgebied: Hilversum en omgeving (Gooi)
-- Google Bedrijfsprofiel: `https://share.google/nWJnzld6kABxqizoN` (5,0 sterren, 4 reviews op moment van schrijven). Link staat in de footer van elke pagina, op [contact.html](contact.html) en bij de testimonials-sectie op [index.html](index.html); rating is verwerkt als `aggregateRating` in de JSON-LD op [index.html](index.html) en [contact.html](contact.html). **Bij een nieuwe/gewijzigde rating**: werk de `aggregateRating`-waarden en de zichtbare sterren-badge op de homepage bij.
+- Google Bedrijfsprofiel: `https://share.google/nWJnzld6kABxqizoN` (5,0 sterren, 4 reviews op moment van schrijven). Link staat in de footer van elke pagina en op [contact.html](contact.html); rating is verwerkt als `aggregateRating` in de JSON-LD op [index.html](index.html) en [contact.html](contact.html). **Bij een nieuwe/gewijzigde rating**: werk de `aggregateRating`-waarden en de zichtbare sterren-badge op de homepage bij.
 
 De volledige bedrijfsnaam "Fennis Bouw- en Aannemersbedrijf B.V." komt bewust op meerdere plekken voor: de footer op elke pagina, de JSON-LD blokken (`name`/`legalName`) in de `<head>`, `site.webmanifest` en [llms.txt](llms.txt). Paginatitels en `og:title` gebruiken de kortere merknaam "Fennis Aannemersbedrijf" i.v.m. SEO-titellengte. **Bij wijziging van adres, telefoon of e-mail: pas alle plekken aan** (zichtbare tekst, JSON-LD op elke pagina, llms.txt).
 
 ✅ Het domein is vastgesteld op `https://www.aannemersbedrijf-fennis.nl/` en verwerkt in canonical links, OG-tags, JSON-LD `url`/`image`, sitemap.xml en robots.txt.
 
-ℹ️ De testimonials-sectie op [index.html](index.html) bevat momenteel placeholder-citaten (duidelijk als zodanig gemarkeerd) totdat er echte klantreviews worden aangeleverd.
+ℹ️ De testimonials-sectie op [index.html](index.html) is momenteel verborgen (`hidden`-attribuut). Om hem te activeren met echte klantreviews: verwijder `hidden` van de `<section>`, vervang de drie placeholder-citaten door echte tekst en verwijder de `<span class="testimonial-placeholder">`-labels.
 
 ## 4. Lokaal bekijken / testen
 
