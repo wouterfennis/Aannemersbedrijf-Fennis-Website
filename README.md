@@ -6,17 +6,18 @@ Deze repository bevat de statische website van Fennis Bouw- en Aannemersbedrijf 
 
 - **Geen framework, geen build tools.** De site bestaat uit platte HTML, CSS en JavaScript. Er is geen npm/node, bundler, CMS of server-side code nodig.
 - **HTML**: losse `.html`-bestanden per pagina (zie hieronder). Taal: Nederlands (`lang="nl"`).
-- **CSS**: één stylesheet [css/style.css](css/style.css) met CSS-variabelen (kleuren, radius, schaduwen, containerbreedte) bovenaan in `:root`. Geen externe CSS-frameworks of CDN's — bewust voor performance en privacy (geen third-party requests, systeem-fontstack i.p.v. Google Fonts).
+- **CSS**: één stylesheet [css/style.css](css/style.css) met CSS-variabelen (kleuren, radius, schaduwen, containerbreedte) bovenaan in `:root`. Geen externe CSS-frameworks of CDN's — bewust voor performance (systeem-fontstack i.p.v. Google Fonts).
 - **JavaScript**: één klein bestand [js/main.js](js/main.js), zonder dependencies. Regelt alleen:
   - het openen/sluiten van het mobiele navigatiemenu (hamburgerknop);
   - het automatisch invullen van het jaartal in de footer (`#current-year`).
+- **Analytics**: Google Analytics 4 (tag `G-4FBDWJ1TWJ`) is opgenomen in de `<head>` van elke pagina via het `async` gtag.js-snippet. Dit is de enige externe third-party request op de site.
 - **Iconen/afbeeldingen**: [assets/images/logo.svg](assets/images/logo.svg) en [assets/images/favicon.svg](assets/images/favicon.svg) zijn eigen, simpele SVG's (monogram). Er zijn bewust géén foto's van de oude site overgenomen (auteursrecht/hotlinking vermijden). Bij het toevoegen van echte projectfoto's: gebruik eigen/aangekocht materiaal en optimaliseer de bestandsgrootte.
 - **SEO / vindbaarheid**:
   - [robots.txt](robots.txt) en [sitemap.xml](sitemap.xml) voor zoekmachines.
   - [llms.txt](llms.txt) volgens de llmstxt.org-conventie, een korte samenvatting voor AI-assistenten/LLM's.
   - Op elke pagina: JSON-LD structured data (`GeneralContractor`/`LocalBusiness`), Open Graph-meta, canonical URL. Op [index.html](index.html) en [contact.html](contact.html) bevat de structured data ook een `aggregateRating` (Google-beoordeling, zie punt 3). Bewust géén Twitter Card-tags of Facebook/LinkedIn-specifieke markup.
   - Naast de WhatsApp-link (`wa.me`) staat er nu ook een link naar het Google Bedrijfsprofiel (reviews) in de footer van elke pagina, op [contact.html](contact.html) en bij de testimonials-sectie op [index.html](index.html).
-- **Overig**: [site.webmanifest](site.webmanifest) (PWA-manifest voor iconen/themakleur), [404.html](404.html) als foutpagina (met dezelfde header/footer als de overige pagina's), [MARKETING-PLAN.md](MARKETING-PLAN.md) met een lopend actieplan (agent-taken en menselijke acties) voor verdere verbetering van de site.
+- **Overig**: [site.webmanifest](site.webmanifest) (PWA-manifest voor iconen/themakleur), [404.html](404.html) als foutpagina (met dezelfde header/footer als de overige pagina's).
 
 ## 2. Paginastructuur
 
@@ -47,7 +48,7 @@ De volledige bedrijfsnaam "Fennis Bouw- en Aannemersbedrijf B.V." komt bewust op
 
 ✅ Het domein is vastgesteld op `https://www.aannemersbedrijf-fennis.nl/` en verwerkt in canonical links, OG-tags, JSON-LD `url`/`image`, sitemap.xml en robots.txt.
 
-ℹ️ De testimonials-sectie op [index.html](index.html) bevat momenteel placeholder-citaten (duidelijk als zodanig gemarkeerd) totdat er echte klantreviews worden aangeleverd — zie [MARKETING-PLAN.md](MARKETING-PLAN.md).
+ℹ️ De testimonials-sectie op [index.html](index.html) bevat momenteel placeholder-citaten (duidelijk als zodanig gemarkeerd) totdat er echte klantreviews worden aangeleverd.
 
 ## 4. Lokaal bekijken / testen
 
