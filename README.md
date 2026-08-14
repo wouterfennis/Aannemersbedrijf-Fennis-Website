@@ -11,7 +11,7 @@ Deze repository bevat de statische website van Fennis Bouw- en Aannemersbedrijf 
   - het openen/sluiten van het mobiele navigatiemenu (hamburgerknop);
   - het automatisch invullen van het jaartal in de footer (`#current-year`).
 - **Analytics**: Google Analytics 4 (tag `G-4FBDWJ1TWJ`) is opgenomen in de `<head>` van elke pagina via het `async` gtag.js-snippet. Dit is de enige externe third-party request op de site.
-- **Iconen/afbeeldingen**: [assets/images/logo.svg](assets/images/logo.svg) en [assets/images/favicon.svg](assets/images/favicon.svg) zijn eigen, simpele SVG's (monogram). Er zijn bewust géén foto's van de oude site overgenomen (auteursrecht/hotlinking vermijden). Bij het toevoegen van echte projectfoto's: gebruik eigen/aangekocht materiaal en optimaliseer de bestandsgrootte.
+- **Iconen/afbeeldingen**: [assets/images/logo.svg](assets/images/logo.svg) en [assets/images/favicon.svg](assets/images/favicon.svg) zijn eigen, simpele SVG's (monogram). Er zijn bewust géén foto's van de oude site overgenomen (auteursrecht/hotlinking vermijden). Echte projectfoto's worden ook als CSS `background-image`-banner ingezet (`.hero`, `.services-section` in [css/style.css](css/style.css)) — zie punt 5 voor de aandachtspunten.
 - **SEO / vindbaarheid**:
   - [robots.txt](robots.txt) en [sitemap.xml](sitemap.xml) voor zoekmachines.
   - [llms.txt](llms.txt) volgens de llmstxt.org-conventie, een korte samenvatting voor AI-assistenten/LLM's.
@@ -45,8 +45,6 @@ Deze repository bevat de statische website van Fennis Bouw- en Aannemersbedrijf 
 - Google Bedrijfsprofiel: `https://share.google/nWJnzld6kABxqizoN` (5,0 sterren, 4 reviews op moment van schrijven). Link staat in de footer van elke pagina en op [contact.html](contact.html); rating is verwerkt als `aggregateRating` in de JSON-LD op [index.html](index.html) en [contact.html](contact.html). **Bij een nieuwe/gewijzigde rating**: werk de `aggregateRating`-waarden en de zichtbare sterren-badge op de homepage bij.
 
 De volledige bedrijfsnaam "Fennis Bouw- en Aannemersbedrijf B.V." komt bewust op meerdere plekken voor: de footer op elke pagina, de JSON-LD blokken (`name`/`legalName`) in de `<head>`, `site.webmanifest` en [llms.txt](llms.txt). Paginatitels en `og:title` gebruiken de kortere merknaam "Fennis Aannemersbedrijf" i.v.m. SEO-titellengte. **Bij wijziging van adres, telefoon of e-mail: pas alle plekken aan** (zichtbare tekst, JSON-LD op elke pagina, llms.txt).
-
-✅ Het domein is vastgesteld op `https://www.aannemersbedrijf-fennis.nl/` en verwerkt in canonical links, OG-tags, JSON-LD `url`/`image`, sitemap.xml en robots.txt.
 
 ℹ️ De testimonials-sectie op [index.html](index.html) is momenteel verborgen (`hidden`-attribuut). Om hem te activeren met echte klantreviews: verwijder `hidden` van de `<section>`, vervang de drie placeholder-citaten door echte tekst en verwijder de `<span class="testimonial-placeholder">`-labels.
 
@@ -82,7 +80,11 @@ Pas de wijziging toe in **elk** HTML-bestand (header en footer komen in alle 6 p
 Alle styling staat in [css/style.css](css/style.css). Kleuren, afstanden en dergelijke via de CSS-variabelen in `:root` aanpassen werkt site-breed door; sectie-specifieke classes staan verderop in het bestand.
 
 ### Afbeeldingen toevoegen/vervangen
-Plaats bestanden in `assets/images/`. Gebruik gecomprimeerde formaten (WebP/geoptimaliseerde JPG/PNG of SVG voor iconen) om de site snel te houden. Vergeet niet `width`/`height`-attributen en een beschrijvende `alt`-tekst toe te voegen voor toegankelijkheid en SEO.
+Plaats bestanden in `assets/images/`. Gebruik gecomprimeerde formaten (JPG/PNG of SVG voor iconen), en voeg `width`/`height` en een beschrijvende `alt`-tekst toe.
+
+Bij echte projectfoto's (`assets/images/kozijn/`, `assets/images/verbouwing/`, e.d.): strip eerst metadata met `./scripts/Remove-ImageMetadata.ps1 -Fix` en comprimeer tot ~1920px breed / een paar honderd KB.
+
+**Foto als sectie-achtergrond** (zoals `.hero` of `.services-section` in [css/style.css](css/style.css)): dit is een CSS `background-image` met donkere overlay, geen `<img>`. Staat de sectie boven de vouw, voeg dan een `<link rel="preload" as="image" href="...">` toe in de `<head>` — de preload-scanner ziet CSS-achtergronden anders niet.
 
 ### SEO-bestanden actueel houden
 Bij toevoegen/verwijderen van pagina's: werk [sitemap.xml](sitemap.xml) bij. Bij grote inhoudelijke wijzigingen (diensten, bedrijfsgegevens): werk ook [llms.txt](llms.txt) en de JSON-LD-blokken bij.
