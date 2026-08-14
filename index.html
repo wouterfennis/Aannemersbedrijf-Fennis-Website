@@ -22,6 +22,9 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#1b2a41">
 
+  <!-- Hero background photo isn't discoverable by the preload scanner since it's set via CSS -->
+  <link rel="preload" as="image" href="assets/images/kozijn/kraan-kozijn-hijsen.jpg">
+
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Structured data: LocalBusiness / GeneralContractor -->
@@ -198,7 +201,7 @@
     </section>
 
     <!-- Services -->
-    <section class="section-alt">
+    <section class="section-alt services-section">
       <div class="container">
         <div class="section-head center">
           <p class="eyebrow">Wat wij doen</p>
@@ -239,7 +242,7 @@
           </div>
         </div>
 
-        <p class="text-center" style="margin-top:2.5rem;"><a class="btn btn-dark" href="diensten.html">Bekijk al onze diensten</a></p>
+        <p class="text-center" style="margin-top:2.5rem;"><a class="btn btn-outline" href="diensten.html">Bekijk al onze diensten</a></p>
       </div>
     </section>
 

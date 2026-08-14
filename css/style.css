@@ -184,7 +184,9 @@ section { padding: 4.5rem 0; }
 
 /* ---- Hero ---- */
 .hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #1a1412 100%);
+  background-image: linear-gradient(135deg, rgba(42, 34, 32, 0.6) 0%, rgba(26, 20, 18, 0.6) 100%), url("../assets/images/kozijn/kraan-kozijn-hijsen.jpg");
+  background-size: cover;
+  background-position: center;
   color: var(--color-white);
   padding: 5rem 0;
   position: relative;
@@ -219,8 +221,21 @@ section { padding: 4.5rem 0; }
 .hero-visual hr { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 1.25rem 0; }
 
 @media (max-width: 860px) {
+  .hero { background-position: 70% center; }
   .hero-inner { grid-template-columns: 1fr; }
 }
+
+/* ---- Services section photo banner ---- */
+.services-section {
+  position: relative;
+  background-image: linear-gradient(135deg, rgba(42, 34, 32, 0.75) 0%, rgba(26, 20, 18, 0.75) 100%), url("../assets/images/verbouwing/dak-nieuwe-balklaag-houtwerk.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+}
+.services-section .eyebrow { color: var(--color-accent-light); }
+.services-section h2 { color: var(--color-white); }
+.services-section .section-head p.text-muted { color: rgba(255,255,255,0.85); }
 
 /* ---- Page header (sub pages) ---- */
 .page-header {
