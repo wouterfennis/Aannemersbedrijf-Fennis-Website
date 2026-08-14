@@ -47,7 +47,7 @@ function Get-JpegMetadataSegments {
 
     $segments = @()
     if ($Bytes.Length -lt 4 -or $Bytes[0] -ne 0xFF -or $Bytes[1] -ne 0xD8) {
-        return $segments
+        return @{ Segments = $segments; ParseOk = $true }
     }
 
     $offset = 2
@@ -64,9 +64,19 @@ function Get-JpegMetadataSegments {
         if ($marker -eq 0xDA -or $marker -eq 0xD9) { break }
         if ($offset + 3 -ge $Bytes.Length) { break }
 
-        $segLength = ($Bytes[$offset + 2] -shl 8) -bor $Bytes[$offset + 3]
+        # Cast to [int] before shifting - shifting a [byte] by 8 stays within its own
+        # 8-bit width and always yields 0, silently discarding the high byte otherwise.
+        $segLength = ([int]$Bytes[$offset + 2] -shl 8) -bor $Bytes[$offset + 3]
         if ($segLength -lt 2) { break } # malformed, avoid infinite loop
         $segTotalLength = 2 + $segLength
+
+        # Safety check: the next byte after this segment must be a new marker (or EOF).
+        # If not, our declared length doesn't match the real segment boundary - abort
+        # rather than risk cutting into the middle of a segment and corrupting the file.
+        $nextOffset = $offset + $segTotalLength
+        if ($nextOffset -lt $Bytes.Length -and $Bytes[$nextOffset] -ne 0xFF) {
+            return @{ Segments = @(); ParseOk = $false }
+        }
 
         if ($marker -eq 0xE1) {
             # APP1: only flag it when it's actually the Exif identifier (vs e.g. XMP).
@@ -83,7 +93,7 @@ function Get-JpegMetadataSegments {
 
         $offset += $segTotalLength
     }
-    return $segments
+    return @{ Segments = $segments; ParseOk = $true }
 }
 
 function Get-PngMetadataChunks {
@@ -155,13 +165,25 @@ $results = @(foreach ($file in $files) {
     try {
         $bytes = [System.IO.File]::ReadAllBytes($file.FullName)
         # Wrap in @() - PowerShell unrolls an empty array return into $null otherwise.
-        $ranges = @(if ($ext -eq '.png') { Get-PngMetadataChunks -Bytes $bytes } else { Get-JpegMetadataSegments -Bytes $bytes })
+        $parseOk = $true
+        $ranges = @(
+            if ($ext -eq '.png') {
+                Get-PngMetadataChunks -Bytes $bytes
+            } else {
+                $result = Get-JpegMetadataSegments -Bytes $bytes
+                $parseOk = $result.ParseOk
+                $result.Segments
+            }
+        )
         $bytesRemoved = 0
         if ($ranges.Count -gt 0) {
             $bytesRemoved = ($ranges | Measure-Object -Property Length -Sum).Sum
         }
 
-        if ($ranges.Count -gt 0) {
+        if (-not $parseOk) {
+            $status = 'Skipped: segment boundary check failed - file left untouched'
+        }
+        elseif ($ranges.Count -gt 0) {
             if ($Fix) {
                 $newBytes = Remove-ByteRanges -Bytes $bytes -Ranges $ranges
                 $tempPath = "$($file.FullName).tmp"
@@ -177,7 +199,7 @@ $results = @(foreach ($file in $files) {
         [PSCustomObject]@{
             File          = $relativePath
             Format        = $ext.TrimStart('.').ToUpperInvariant()
-            MetadataFound = $ranges.Count -gt 0
+            MetadataFound = $parseOk -and $ranges.Count -gt 0
             Segments      = ($ranges | Select-Object -ExpandProperty Name) -join ', '
             BytesRemoved  = $bytesRemoved
             Status        = $status
