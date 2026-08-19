@@ -106,6 +106,20 @@
   </header>
 
   <main id="main">
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vergrote afbeelding" hidden>
+      <button type="button" class="lightbox-close" aria-label="Sluiten">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button type="button" class="lightbox-prev" aria-label="Vorige foto">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button type="button" class="lightbox-next" aria-label="Volgende foto">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <img class="lightbox-image" src="" alt="">
+      <p class="lightbox-caption"></p>
+    </div>
+
     <section class="page-header">
       <div class="container">
         <nav aria-label="Breadcrumb">
@@ -169,23 +183,33 @@
         </div>
         <div class="photo-grid">
           <figure>
-            <img src="assets/images/kelder/graafmachine-aanvang-onderkeldering.jpg" alt="Graafmachine voor woning bij aanvang van de onderkeldering" loading="lazy">
+            <button type="button" class="photo-grid-trigger" aria-label="Vergroot foto: Aanvang werkzaamheden: graven naast de fundering">
+              <img src="assets/images/kelder/graafmachine-aanvang-onderkeldering.jpg" alt="Graafmachine voor woning bij aanvang van de onderkeldering" loading="lazy">
+            </button>
             <figcaption>Aanvang werkzaamheden: graven naast de fundering</figcaption>
           </figure>
           <figure>
-            <img src="assets/images/kelder/pallet-stenen-bouwput.jpg" alt="Pallet stenen wordt neergelaten in de bouwput" loading="lazy">
+            <button type="button" class="photo-grid-trigger" aria-label="Vergroot foto: Aanvoer bouwmaterialen in de bouwput">
+              <img src="assets/images/kelder/pallet-stenen-bouwput.jpg" alt="Pallet stenen wordt neergelaten in de bouwput" loading="lazy">
+            </button>
             <figcaption>Aanvoer bouwmaterialen in de bouwput</figcaption>
           </figure>
           <figure>
-            <img src="assets/images/kelder/metselwerkwanden-kelder-in-aanbouw.jpg" alt="Nieuwe metselwerkwanden in de kelder in aanbouw" loading="lazy">
+            <button type="button" class="photo-grid-trigger" aria-label="Vergroot foto: Nieuw metselwerk: de kelderwanden worden opgemetseld">
+              <img src="assets/images/kelder/metselwerkwanden-kelder-in-aanbouw.jpg" alt="Nieuwe metselwerkwanden in de kelder in aanbouw" loading="lazy">
+            </button>
             <figcaption>Nieuw metselwerk: de kelderwanden worden opgemetseld</figcaption>
           </figure>
           <figure>
-            <img src="assets/images/kelder/houten-betimmeringsraamwerk-kelderwanden.png" alt="Houten betimmeringsraamwerk in de kelderwanden" loading="lazy">
+            <button type="button" class="photo-grid-trigger" aria-label="Vergroot foto: Betimmeringsraamwerk voor wand- en plafondbetimmering">
+              <img src="assets/images/kelder/houten-betimmeringsraamwerk-kelderwanden.png" alt="Houten betimmeringsraamwerk in de kelderwanden" loading="lazy">
+            </button>
             <figcaption>Betimmeringsraamwerk voor wand- en plafondbetimmering</figcaption>
           </figure>
           <figure>
-            <img src="assets/images/kelder-vloerverwarming-betonvloer.jpg" alt="Kelder met vloerverwarming aangebracht op de betonvloer" loading="lazy">
+            <button type="button" class="photo-grid-trigger" aria-label="Vergroot foto: Afwerking: vloerverwarming gelegd in de nieuwe kelder">
+              <img src="assets/images/kelder-vloerverwarming-betonvloer.jpg" alt="Kelder met vloerverwarming aangebracht op de betonvloer" loading="lazy">
+            </button>
             <figcaption>Afwerking: vloerverwarming gelegd in de nieuwe kelder</figcaption>
           </figure>
         </div>
@@ -201,19 +225,27 @@
         </div>
         <div class="photo-grid">
           <figure>
-            <img src="assets/images/verbouwing/ruwbouw-dakopbouw-steigers-houtskelet.png" alt="Ruwbouw dakopbouw met steigers en nieuw houtskelet in aanbouw" loading="lazy">
+            <button type="button" class="photo-grid-trigger" aria-label="Vergroot foto: Ruwbouw dakopbouw — houtskelet in aanbouw">
+              <img src="assets/images/verbouwing/ruwbouw-dakopbouw-steigers-houtskelet.png" alt="Ruwbouw dakopbouw met steigers en nieuw houtskelet in aanbouw" loading="lazy">
+            </button>
             <figcaption>Ruwbouw dakopbouw — houtskelet in aanbouw</figcaption>
           </figure>
           <figure>
-            <img src="assets/images/verbouwing/dak-nieuwe-balklaag-houtwerk.jpg" alt="Nieuwe balklaag voor het dak, zichtbaar houtwerk tegen blauwe lucht" loading="lazy">
+            <button type="button" class="photo-grid-trigger" aria-label="Vergroot foto: Dakbalklaag: nieuwe constructie in hout">
+              <img src="assets/images/verbouwing/dak-nieuwe-balklaag-houtwerk.jpg" alt="Nieuwe balklaag voor het dak, zichtbaar houtwerk tegen blauwe lucht" loading="lazy">
+            </button>
             <figcaption>Dakbalklaag: nieuwe constructie in hout</figcaption>
           </figure>
           <figure>
-            <img src="assets/images/dakconstructie-spanten-gordingen.jpg" alt="Dakconstructie met spanten en gordingen, binnenkant" loading="lazy">
+            <button type="button" class="photo-grid-trigger" aria-label="Vergroot foto: Dakspanten — constructief werk van binnenuit">
+              <img src="assets/images/dakconstructie-spanten-gordingen.jpg" alt="Dakconstructie met spanten en gordingen, binnenkant" loading="lazy">
+            </button>
             <figcaption>Dakspanten — constructief werk van binnenuit</figcaption>
           </figure>
           <figure>
-            <img src="assets/images/verbouwing/aanbouw-glaspartij-buitenaanzicht.png" alt="Aanbouw met grote glaspartij — buitenaanzicht na oplevering" loading="lazy">
+            <button type="button" class="photo-grid-trigger" aria-label="Vergroot foto: Opgeleverde aanbouw met glaspartij — buitenaanzicht">
+              <img src="assets/images/verbouwing/aanbouw-glaspartij-buitenaanzicht.png" alt="Aanbouw met grote glaspartij — buitenaanzicht na oplevering" loading="lazy">
+            </button>
             <figcaption>Opgeleverde aanbouw met glaspartij — buitenaanzicht</figcaption>
           </figure>
         </div>

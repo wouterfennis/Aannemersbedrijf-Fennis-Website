@@ -388,6 +388,78 @@ ol.breadcrumbs li + li::before { content: " / "; }
   font-size: 0.83rem;
   color: var(--color-text-muted);
 }
+.photo-grid-trigger {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: zoom-in;
+}
+.photo-grid-trigger:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: -3px;
+  border-radius: 3px;
+}
+
+/* ---- Lightbox ---- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1.5rem;
+}
+.lightbox[hidden] { display: none; }
+body.lightbox-open { overflow: hidden; }
+.lightbox-image {
+  max-width: 90vw;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+}
+.lightbox-caption {
+  color: var(--color-white);
+  margin: 1rem 0 0;
+  text-align: center;
+  max-width: 60ch;
+}
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover { background: rgba(255, 255, 255, 0.25); }
+.lightbox-close svg,
+.lightbox-prev svg,
+.lightbox-next svg { width: 24px; height: 24px; }
+.lightbox-close { top: 1.25rem; right: 1.25rem; }
+.lightbox-prev { top: 50%; left: 1.25rem; transform: translateY(-50%); }
+.lightbox-next { top: 50%; right: 1.25rem; transform: translateY(-50%); }
+@media (max-width: 620px) {
+  .lightbox { padding: 1rem; }
+  .lightbox-image { max-height: 65vh; }
+  .lightbox-close { top: 0.5rem; right: 0.5rem; }
+  .lightbox-prev { left: 0.5rem; }
+  .lightbox-next { right: 0.5rem; }
+}
 
 /* ---- Portrait (Rolf Fennis) ---- */
 .portrait-block {
