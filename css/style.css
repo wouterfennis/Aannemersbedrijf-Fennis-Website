@@ -237,6 +237,20 @@ section { padding: 4.5rem 0; }
 .services-section h2 { color: var(--color-white); }
 .services-section .section-head p.text-muted { color: rgba(255,255,255,0.85); }
 
+/* ---- Process section photo banner (diensten page) ---- */
+.process-section {
+  position: relative;
+  background-image: linear-gradient(135deg, rgba(42, 34, 32, 0.75) 0%, rgba(26, 20, 18, 0.75) 100%), url("../assets/images/verbouwing/bouwtekening.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+}
+.process-section .eyebrow { color: var(--color-accent-light); }
+.process-section h2 { color: var(--color-white); }
+.process-section .step h3 { color: var(--color-white); }
+.process-section .step p.text-muted { color: rgba(255,255,255,0.85); }
+.process-section .step-number { background: var(--color-accent); }
+
 /* ---- Page header (sub pages) ---- */
 .page-header {
   background: linear-gradient(135deg, var(--color-primary) 0%, #1a1412 100%);
