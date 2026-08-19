@@ -265,6 +265,27 @@ ol.breadcrumbs li + li::before { content: " / "; }
 .breadcrumbs a:hover { text-decoration: underline; }
 .page-header-lead { max-width: 60ch; color: rgba(255,255,255,0.85); }
 
+/* ---- Page header photo banner (diensten page) ---- */
+.page-header-diensten {
+  background-image: linear-gradient(135deg, rgba(42, 34, 32, 0.75) 0%, rgba(26, 20, 18, 0.75) 100%), url("../assets/images/kozijn/kozijn-geplaatst-aanbouw.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---- Page header photo banner (projecten page) ---- */
+.page-header-projecten {
+  background-image: linear-gradient(135deg, rgba(42, 34, 32, 0.75) 0%, rgba(26, 20, 18, 0.75) 100%), url("../assets/images/verbouwing/balklaag-verstevigen.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---- Page header photo banner (contact page) ---- */
+.page-header-contact {
+  background-image: linear-gradient(135deg, rgba(42, 34, 32, 0.75) 0%, rgba(26, 20, 18, 0.75) 100%), url("../assets/images/dakconstructie-spanten-gordingen.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* ---- Cards / grids ---- */
 .grid { display: grid; gap: 1.75rem; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
