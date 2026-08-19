@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.aannemersbedrijf-fennis.nl/sitemap.xml
+Sitemap: https://aannemersbedrijf-fennis.nl/sitemap.xml
